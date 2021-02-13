@@ -1,11 +1,35 @@
 body {
     margin: 0;
     background-color: #E6E6E6;
+    font-weight: 500;
+    .navbar-custom {
+        background-color: #003D76;
+        border-color: #003D76;
+        color: white;
+        a {
+            background-color: #003D76;
+        border-color: #003D76;
+        color: white; 
+        }
+    }
+    .count-custom {
+        position: absolute;
+        top: -40px;
+        left: -4px;
+        background: #006C86;
+        min-width: 25px;
+        height: 20px;
+        border-radius: 150%;
+        font-size: 20px;
+        display: block;
+        padding: 7px 7px 10px;
+        border: 2px solid #fff;
+        text-align: center;
+        box-shadow: 1px 2px 4px rgb(0 0 0 / 50%);
+    }
     .heros-container {
         max-width: 900px;
-        margin: auto;
-        
-               
+        margin: auto;       
             .cards-section {
                 border: 2px solid black;
                 width: 100%;
@@ -39,12 +63,36 @@ body {
                             text-decoration: none;
                             color: white;
                         }
+                        .tab-links-title {
+                            font-weight: bolder;
+                            .btn {
+                                padding-right: 5px;
+                                padding-left: 5px;
+                                background-color: #006C86;
+                                &hover{
+                                    background-color: #E6E6E6;
+                                    color: #E6E6E6;
+                                }
+                            }
+
+                        }
                         .tab-links {
-                             border-left: 2px solid snow;
-                             margin-left: 5px;
-                             
-        
-                         }
+                            font-weight: 500;
+                            .btn {
+                                 border-left: 2px solid snow;
+                                 margin-left: 10px;
+                                 padding-right: 5px;
+                                 padding-left: 5px;
+                                 background-color: #006C86;
+                                 &hover{
+                                    background-color: #E6E6E6;
+                                    color: #E6E6E6;
+                                }
+                                 
+            
+                             }
+
+                        }
                             
                               
                          }
@@ -85,8 +133,57 @@ body {
                     
     
             }
+        }
+        .footer {
+            background-color: #003D76;
+            color: whitesmoke;
+            .container {
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+                .logo {
+                    grid-column: 2;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+                .content-info {
+                    grid-column:1 / span 2 ;
+                    display: flex;
+                    align-items: flex-end;
+                    flex-direction: column;
+                    font-size: 20px;
+                    h1 {
+                        font-size: 25px;
+                    }
+                }
+                .copyright {
+                    font-size: 20px;
+                    border-right: #E6E6E6;
+                    border-left: #E6E6E6;
+                }
             }
-}
+        }
+        #myBtn {
+            display: none;
+            z-index: 99;
+            border: none;
+            outline: none;
+            position: fixed;
+            bottom: 8px;
+            right: 15px;
+            background-color: #006C86;
+            color: white;
+            width: auto;
+            transition: 5s;
+            &:hover {
+                background-color: #E6E6E6;
+                color: #006C86;
+                font-weight: 900;
+            }
+            
+        }
+        }
+
         
         
     

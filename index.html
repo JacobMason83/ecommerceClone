@@ -12,24 +12,26 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
     <link href="styles/main.css" rel="stylesheet" />
+    <link  href="./pages/pay-page.html">
+    <script src='./scripts/cart.js' async ></script>
   </head>
   <body>
     <div class="container-fluid">
       <div class="nav-container">
         <div class="content-container row">
           <div class="logo-wrapper col-md-6" role="banner">
-            <img src="styles\images\herkules-logo.png" alt="">
+            <img src="./styles/images/herkules-logo.png" alt="">
           </div>
           <div class="phone-number col-md-6" role="banner" style='font-size: 50px'>260-431-7763</div>
         </div>
       
-      <nav class="navbar navbar-inverse bg-primary">
-        <div class="container-fluid">
+      <nav class="navbar navbar-inverse navbar-custom">
+        <div class="container-fluid ">
           <div class="navbar-header">
             <a class="navbar-brand" href="#">Hercules</a>
           </div>
           <ul class="nav navbar-nav row">
-            <li class="active"><a href="#">Home</a></li>
+            <li class="active "><a class='navbar-custom' href="#">Home</a></li>
             <li class="dropdown">
               <a class="dropdown-toggle" data-toggle="dropdown" href="#">Products
                 <span class="caret"></span></a>
@@ -39,11 +41,11 @@
                   <li><a href="#">Contact</a></li>
                 </ul>
               </li>
-              <li><a href="#">Products</a></li>
+              <li><a href="./pages/pay-page.html">Cart Page</a></li>
               <li><a href="#">Prouduct Info</a></li>
               <li><a href="#">Contact</a></li>
              
-                <li class='nav-bar-right icon-bar justify-content-end'><a class="fa fa-shopping-cart" aria-hidden="true"></a></li>
+                <li class='nav-bar-right icon-bar justify-content-end'><i class='count-custom'></i><a class="fa fa-shopping-cart" aria-hidden="true"></a></li>
               
             </ul>
             
@@ -65,39 +67,160 @@
 
         </div>
         
-
-          <ol class='card col-md-12 cards-section ' style='border: 2px solid black'>             
-            <li >
-                <h6>Section 1</h6>
-                <div class="menu list-inline  ">
-                    <a class='tab-links-title' target="_blank" class='title'>Name of Cart</a>
-                    <a class='tab-links' target="_blank" class='links'>Chart</a>
-                    <a class='tab-links' target="_blank" class='links'>Brochure</a>
-                    <a class='tab-links' target="_blank" class='links'>Image</a>
-                    <a class='tab-links' target="_blank" class='links'>Videos</a>
-                </div> 
-              
-               
-                    <div class="card-image col-md-4">
-                      <img src="./styles/images/dj5020_01_herkules_door_and_bumper_jack_41-300x300.jpg" alt="logo">
-                    </div>
-                    <div class="card-body col-md-8">
-                      <p>Mounting a door or bumper becomes a one-person job with the DJ 5020 Door & Bumper Jack. The door (or bumper) is safely held at the desired height for proper mounting, allowing the technician to attach necessary fasteners. Equipped with 4 caster wheels for easy movement, leveling rods for precise placement, and an easy turn handle for positioning, this jack greatly reduces strain and worker fatigue.  With a lift capacity of three hundred pounds (300 lbs), the DJ 5020 is made in USA. </p>
-                    </div>
-                    <div id="bottom">
-                      <h3>$764.00</h3>
-                      <button id='btn'>Add to Cart</button>
-                    </div>
-                </li>
+          <div class="card-container">
+            <ol class='card col-md-12 cards-section ' style='border: 2px solid black'>             
+              <li>
+                <div class="section-header">
+                  <h4>Section 1</h4>
+                </div>
+                  <div class="menu list-inline  ">
+                      <a class='tab-links-title' target="_blank" class='title'><button class="btn">DJ5020</button></a>
+                      <a class='tab-links' target="_blank" class='links'><button class="btn">Chart</button></a>
+                      <a class='tab-links' target="_blank" class='links'><button class="btn">Brochure</button></a>
+                      <a class='tab-links' target="_blank" class='links'><button class="btn">Image</button></a>
+                      <a class='tab-links' target="_blank" class='links'><button class="btn">Videos</button></a>
+                  </div> 
                 
-              
-                  
-  
-              
-                  </ol>
+                 
+                      <div class="card-image col-md-4">
+                        <img src="./styles/images/dj5020_01_herkules_door_and_bumper_jack_41-300x300.jpg" alt="logo">
+                      </div>
+                      <div class="card-body col-md-8">
+                        <p>Mounting a door or bumper becomes a one-person job with the DJ 5020 Door & Bumper Jack. The door (or bumper) is safely held at the desired height for proper mounting, allowing the technician to attach necessary fasteners. Equipped with 4 caster wheels for easy movement, leveling rods for precise placement, and an easy turn handle for positioning, this jack greatly reduces strain and worker fatigue.  With a lift capacity of three hundred pounds (300 lbs), the DJ 5020 is made in USA. </p>
+                      </div>
+                      <div id="bottom">
+                        <h3>$764.00</h3>
+                        <button id='btn' type="button">Add to Cart</button>
+                      </div>
+                  </li>           
+                    </ol>
+            <ol class='card col-md-12 cards-section ' style='border: 2px solid black'>             
+              <li>
+                <div class="section-header">
+                  <h4>Section 1</h4>
+                </div>
+                  <div class="menu list-inline  ">
+                      <a class='tab-links-title' target="_blank" class='title'><button class="btn">DJ5020</button></a>
+                      <a class='tab-links' target="_blank" class='links'><button class="btn">Chart</button></a>
+                      <a class='tab-links' target="_blank" class='links'><button class="btn">Brochure</button></a>
+                      <a class='tab-links' target="_blank" class='links'><button class="btn">Image</button></a>
+                      <a class='tab-links' target="_blank" class='links'><button class="btn">Videos</button></a>
+                  </div> 
+                
+                 
+                      <div class="card-image col-md-4">
+                        <img src="./styles/images/dj5020_01_herkules_door_and_bumper_jack_41-300x300.jpg" alt="logo">
+                      </div>
+                      <div class="card-body col-md-8">
+                        <p>Mounting a door or bumper becomes a one-person job with the DJ 5020 Door & Bumper Jack. The door (or bumper) is safely held at the desired height for proper mounting, allowing the technician to attach necessary fasteners. Equipped with 4 caster wheels for easy movement, leveling rods for precise placement, and an easy turn handle for positioning, this jack greatly reduces strain and worker fatigue.  With a lift capacity of three hundred pounds (300 lbs), the DJ 5020 is made in USA. </p>
+                      </div>
+                      <div id="bottom">
+                        <h3>$764.00</h3>
+                        <button id='btn' type="button">Add to Cart</button>
+                      </div>
+                  </li>           
+                    </ol>
+            <ol class='card col-md-12 cards-section ' style='border: 2px solid black'>             
+              <li>
+                <div class="section-header">
+                  <h4>Section 1</h4>
+                </div>
+                  <div class="menu list-inline  ">
+                      <a class='tab-links-title' target="_blank" class='title'><button class="btn">DJ5020</button></a>
+                      <a class='tab-links' target="_blank" class='links'><button class="btn">Chart</button></a>
+                      <a class='tab-links' target="_blank" class='links'><button class="btn">Brochure</button></a>
+                      <a class='tab-links' target="_blank" class='links'><button class="btn">Image</button></a>
+                      <a class='tab-links' target="_blank" class='links'><button class="btn">Videos</button></a>
+                  </div> 
+                
+                 
+                      <div class="card-image col-md-4">
+                        <img src="./styles/images/dj5020_01_herkules_door_and_bumper_jack_41-300x300.jpg" alt="logo">
+                      </div>
+                      <div class="card-body col-md-8">
+                        <p>Mounting a door or bumper becomes a one-person job with the DJ 5020 Door & Bumper Jack. The door (or bumper) is safely held at the desired height for proper mounting, allowing the technician to attach necessary fasteners. Equipped with 4 caster wheels for easy movement, leveling rods for precise placement, and an easy turn handle for positioning, this jack greatly reduces strain and worker fatigue.  With a lift capacity of three hundred pounds (300 lbs), the DJ 5020 is made in USA. </p>
+                      </div>
+                      <div id="bottom">
+                        <h3>$764.00</h3>
+                        <button id='btn' type="button">Add to Cart</button>
+                      </div>
+                  </li>           
+                    </ol>
+            <ol class='card col-md-12 cards-section ' style='border: 2px solid black'>             
+              <li>
+                <div class="section-header">
+                  <h4>Section 1</h4>
+                </div>
+                  <div class="menu list-inline  ">
+                      <a class='tab-links-title' target="_blank" class='title'><button class="btn">DJ5020</button></a>
+                      <a class='tab-links' target="_blank" class='links'><button class="btn">Chart</button></a>
+                      <a class='tab-links' target="_blank" class='links'><button class="btn">Brochure</button></a>
+                      <a class='tab-links' target="_blank" class='links'><button class="btn">Image</button></a>
+                      <a class='tab-links' target="_blank" class='links'><button class="btn">Videos</button></a>
+                  </div> 
+                
+                 
+                      <div class="card-image col-md-4">
+                        <img src="./styles/images/dj5020_01_herkules_door_and_bumper_jack_41-300x300.jpg" alt="logo">
+                      </div>
+                      <div class="card-body col-md-8">
+                        <p>Mounting a door or bumper becomes a one-person job with the DJ 5020 Door & Bumper Jack. The door (or bumper) is safely held at the desired height for proper mounting, allowing the technician to attach necessary fasteners. Equipped with 4 caster wheels for easy movement, leveling rods for precise placement, and an easy turn handle for positioning, this jack greatly reduces strain and worker fatigue.  With a lift capacity of three hundred pounds (300 lbs), the DJ 5020 is made in USA. </p>
+                      </div>
+                      <div id="bottom">
+                        <h3>$764.00</h3>
+                        <button id='btn' type="button">Add to Cart</button>
+                      </div>
+                  </li>           
+                    </ol>
+            <ol class='card col-md-12 cards-section ' style='border: 2px solid black'>             
+              <li>
+                <div class="section-header">
+                  <h4>Section 1</h4>
+                </div>
+                  <div class="menu list-inline  ">
+                      <a class='tab-links-title' target="_blank" class='title'><button class="btn">DJ5020</button></a>
+                      <a class='tab-links' target="_blank" class='links'><button class="btn">Chart</button></a>
+                      <a class='tab-links' target="_blank" class='links'><button class="btn">Brochure</button></a>
+                      <a class='tab-links' target="_blank" class='links'><button class="btn">Image</button></a>
+                      <a class='tab-links' target="_blank" class='links'><button class="btn">Videos</button></a>
+                  </div> 
+                
+                 
+                      <div class="card-image col-md-4">
+                        <img src="./styles/images/dj5020_01_herkules_door_and_bumper_jack_41-300x300.jpg" alt="logo">
+                      </div>
+                      <div class="card-body col-md-8">
+                        <p>Mounting a door or bumper becomes a one-person job with the DJ 5020 Door & Bumper Jack. The door (or bumper) is safely held at the desired height for proper mounting, allowing the technician to attach necessary fasteners. Equipped with 4 caster wheels for easy movement, leveling rods for precise placement, and an easy turn handle for positioning, this jack greatly reduces strain and worker fatigue.  With a lift capacity of three hundred pounds (300 lbs), the DJ 5020 is made in USA. </p>
+                      </div>
+                      <div id="bottom">
+                        <h3>$764.00</h3>
+                        <button id='btn' type="button">Add to Cart</button>
+                      </div>
+                  </li>           
+                    </ol>
+
+          </div>
             </div>
+          </div>
+          <div class="footer">
+            <div class="container-fluid p-3 row ">
+              <div class="logo col-md-6">
+                <img src="./styles/images/footer-herkules.png" alt="">
+              </div>
+              <div class="content-info col-md-6">
+                <h2 class='display-4'>Herkules Equipment Corporation</h2>
+                <h6>2760 Ridgeway Court Walled Lake, MI 48390 – 1662</h6>
+                <h6>E-mail: info@herkules.us</h6>
+                <div class="copyright">
+                  <h4>Copyright © 2021 Jacob Mason Designs. All rights reserved</h4>
+  
+                </div>
+              </div>
+            </div>
+            <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-arrow-circle-up" aria-hidden="true"></i><br />Top</button>
           </div>
      
     
   </body>
+  <script src='./scripts/index.js'></script>
 </html>
