@@ -12,20 +12,31 @@ body {
         color: white; 
         }
     }
+    
     .count-custom {
-        position: absolute;
-        top: -40px;
-        left: -4px;
+        position: relative;
+        top: -33px;
+        left: 33px;
         background: #006C86;
-        min-width: 25px;
-        height: 20px;
+        min-width: 28px;
+        height: 26px;
         border-radius: 150%;
         font-size: 20px;
         display: block;
         padding: 7px 7px 10px;
         border: 2px solid #fff;
         text-align: center;
-        box-shadow: 1px 2px 4px rgb(0 0 0 / 50%);
+        //box-shadow: 1px 2px 4px rgb(0 0 0 / 50%);
+        -webkit-border-radius: 150%;
+        -moz-border-radius: 150%;
+        -ms-border-radius: 150%;
+        -o-border-radius: 150%;
+}
+    .count-div {
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        font-size: 40px;
     }
     .heros-container {
         max-width: 900px;
@@ -65,7 +76,7 @@ body {
                         }
                         .tab-links-title {
                             font-weight: bolder;
-                            .btn {
+                            .menu-btn {
                                 padding-right: 5px;
                                 padding-left: 5px;
                                 background-color: #006C86;
@@ -78,7 +89,7 @@ body {
                         }
                         .tab-links {
                             font-weight: 500;
-                            .btn {
+                            .menu-btn {
                                  border-left: 2px solid snow;
                                  margin-left: 10px;
                                  padding-right: 5px;
@@ -116,10 +127,10 @@ body {
                         flex-direction: column;
                         justify-content: center;
                         align-items: center;
-                        #btn {                            
+                        .card-btn {                            
                             background-color: #006C86;
                             color: white;
-                            width: 186px;
+                            width: 100px;
                             &:hover {
                                 background-color: #E6E6E6;
                                 color: #006C86;
