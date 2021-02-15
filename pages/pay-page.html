@@ -5,46 +5,72 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <!-- Font Awesome -->
+<link
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+rel="stylesheet"
+/>
+<!-- Google Fonts -->
+<link
+href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+rel="stylesheet"
+/>
+<!-- MDB -->
+<link
+href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.2.0/mdb.min.css"
+rel="stylesheet"
+/>
+<!-- MDB -->
+<script
+  type="text/javascript"
+  src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.2.0/mdb.min.js"
+></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src='https://unpkg.com/@popperjs/core@2'></script>
+    
     <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
     <link href="../styles/index.css" rel="stylesheet" />
+    
+    <script src='./scripts/cart.js' async ></script>
   </head>
   <body>
     <div class="container-fluid">
       <div class="nav-container">
         <div class="content-container row">
-          <div class="logo-wrapper col-md-6" role="banner">
+          <div class="logo-wrapper text-center col-md-6" style='align-self: center' role="banner">
             <img src="../styles/images/herkules-logo.png" alt="">
           </div>
-          <div class="phone-number col-md-6" role="banner" style='font-size: 50px'>260-431-7763</div>
+          <div class="phone-number col-md-6 text-center"  role="banner" style='font-size: 50px'>1.800.444.4351</div>
         </div>
-      
-      <nav class="navbar navbar-inverse navbar-custom">
-        <div class="container-fluid ">
-          <div class="navbar-header">
-            <a class="navbar-brand" href="#">Hercules</a>
+        
+        <nav class="navbar navbar-expand-lg navbar-custom">
+          <div class="container-fluid ">
+            <!-- <div class="navbar-header ">
+              <a class="navbar-brand" href="#">Hercules</a>
+            </div> -->
+            <ul class="nav navbar-nav ">
+              <li class="active "><a class='navbar-custom' href="../index.html">Home</a></li>
+              <li><a href="#">Hercules</a></li>
+              <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#">Products</a>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">Products</a></li>
+                    <li><a href="#">Product Info</a></li>
+                    <li><a href="#">Contact</a></li>
+                  </ul>
+                </li>
+                <li><a href="./pages/pay-page.html">Cart Page</a></li>
+                <li><a href="#">Prouduct Info</a></li>
+                <li><a href="#">Contact</a></li>
+                
+                
+              </ul>
+              
+              <div class='nav-bar-right icon-bar count-div'><i class='count-custom'></i><a class="fa fa-shopping-cart" aria-hidden="true"></a></div>
+            </div>
           </div>
-          <ul class="nav navbar-nav row">
-            <li class="active "><a class='navbar-custom' href="#">Home</a></li>
-            <li class="dropdown">
-              <a class="dropdown-toggle" data-toggle="dropdown" href="#">Products
-                <span class="caret"></span></a>
-                <ul class="dropdown-menu">
-                  <li><a href="#">Products</a></li>
-                  <li><a href="#">Product Info</a></li>
-                  <li><a href="#">Contact</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Products</a></li>
-              <li><a href="#">Prouduct Info</a></li>
-              <li><a href="#">Contact</a></li>
-             
-                <li class='nav-bar-right icon-bar justify-content-end'><i class='count-custom'></i><a class="fa fa-shopping-cart" aria-hidden="true"></a></li>
-            </ul>
-          </div>
-        </div>
-      </nav>
+        </nav>

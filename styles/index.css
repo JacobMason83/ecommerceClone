@@ -1,38 +1,64 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 body {
   margin: 0;
-  background-color: #E6E6E6;
+  background-color: #e6e6e6;
   font-weight: 500;
+  font-size: 20px;
+}
+
+body .logo {
+  height: 200px;
+}
+
+body .phone-number {
+  height: 200px;
+  font-size: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 body .navbar-custom {
-  background-color: #003D76;
-  border-color: #003D76;
+  background-color: #003d76;
+  border-color: #003d76;
   color: white;
+  font-size: 1.5rem;
 }
 
 body .navbar-custom a {
-  background-color: #003D76;
-  border-color: #003D76;
+  background-color: #003d76;
+  border-color: #003d76;
   color: white;
+}
+
+body .navbar-custom a:hover {
+  color: #003d76;
 }
 
 body .count-custom {
   position: relative;
   top: -33px;
   left: 33px;
-  background: #006C86;
-  min-width: 28px;
-  height: 26px;
-  border-radius: 150%;
+  background: #006c86;
+  min-width: 35px;
+  height: 32px;
+  width: 15px;
+  border-radius: 50%;
   font-size: 20px;
   display: block;
   padding: 7px 7px 10px;
   border: 2px solid #fff;
   text-align: center;
-  -webkit-border-radius: 150%;
-  -moz-border-radius: 150%;
-  -ms-border-radius: 150%;
-  -o-border-radius: 150%;
 }
 
 body .count-div {
@@ -45,7 +71,7 @@ body .count-div {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
-  font-size: 40px;
+  font-size: 30px;
 }
 
 body .heros-container {
@@ -53,112 +79,98 @@ body .heros-container {
   margin: auto;
 }
 
-body .heros-container .cards-section {
-  border: 2px solid black;
-  width: 100%;
+body .heros-container .card {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  background-color: #e6e6e6;
+  outline: 2px solid black;
   height: 400px;
-  display: block;
-  list-style-type: decimal;
-  -webkit-margin-before: 1em;
-          margin-block-start: 1em;
-  -webkit-margin-after: 1em;
-          margin-block-end: 1em;
-  -webkit-margin-start: 0px;
-          margin-inline-start: 0px;
-  -webkit-margin-end: 0px;
-          margin-inline-end: 0px;
 }
 
-body .heros-container .cards-section li {
-  list-style-type: none;
-  display: list-item;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
+body .heros-container .card .card-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-body .heros-container .cards-section li .menu {
-  padding-left: 0;
+body .heros-container .card .card-top .menu {
+  margin-left: 0px;
   list-style: none;
-  margin-left: 10px;
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #006C86;
+  background-color: #006c86;
   width: 100%;
   height: 40px;
   font-size: 20px;
   padding: 7px 20px;
   color: white;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
 }
 
-body .heros-container .cards-section li .menu a {
+body .heros-container .card .card-top .menu a {
   text-decoration: none;
   color: white;
 }
 
-body .heros-container .cards-section li .menu .tab-links-title {
+body .heros-container .card .card-top .menu .tab-links-title {
   font-weight: bolder;
-}
-
-body .heros-container .cards-section li .menu .tab-links-title .menu-btn {
   padding-right: 5px;
   padding-left: 5px;
-  background-color: #006C86;
+  background-color: #006c86;
 }
 
-body .heros-container .cards-section li .menu .tab-links-title .menu-btnhover {
-  background-color: #E6E6E6;
-  color: #E6E6E6;
+body .heros-container .card .card-top .menu .tab-links-title:hover {
+  background-color: #e6e6e6;
+  color: #006c86;
 }
 
-body .heros-container .cards-section li .menu .tab-links {
+body .heros-container .card .card-top .menu .tab-links {
   font-weight: 500;
-}
-
-body .heros-container .cards-section li .menu .tab-links .menu-btn {
   border-left: 2px solid snow;
   margin-left: 10px;
   padding-right: 5px;
   padding-left: 5px;
-  background-color: #006C86;
+  background-color: #006c86;
 }
 
-body .heros-container .cards-section li .menu .tab-links .menu-btnhover {
-  background-color: #E6E6E6;
-  color: #E6E6E6;
+body .heros-container .card .card-top .menu .tab-links:hover {
+  background-color: #e6e6e6;
+  color: #006c86;
 }
 
-body .heros-container .cards-section li .card-image img {
-  margin: 10px;
-  width: 75%;
-}
-
-body .heros-container .cards-section li .card-body {
+body .heros-container .card .card-bottom .card-body {
   font-size: 1.3em;
 }
 
-body .heros-container .cards-section li .card-body p {
+body .heros-container .card .card-bottom .card-body p {
   margin-top: 15px;
 }
 
-body .heros-container .cards-section li #bottom {
+body .heros-container .card .card-bottom .card-body .card-image img {
+  margin: 10px;
+  width: 200px;
+  height: 175px;
+}
+
+body .heros-container .card .card-bottom #bottom {
   position: absolute;
   left: 50px;
-  bottom: 50px;
+  bottom: 30px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -174,31 +186,35 @@ body .heros-container .cards-section li #bottom {
           align-items: center;
 }
 
-body .heros-container .cards-section li #bottom .card-btn {
-  background-color: #006C86;
+body .heros-container .card .card-bottom #bottom .card-btn .cart {
   color: white;
-  width: 100px;
+  font-size: 20px;
+  margin-right: 15px;
 }
 
-body .heros-container .cards-section li #bottom .card-btn:hover {
-  background-color: #E6E6E6;
-  color: #006C86;
+body .heros-container .card .card-bottom #bottom .card-btn .cart:hover {
+  color: #006c86;
+}
+
+body .heros-container .card .card-bottom #bottom .card-btn:hover {
+  background-color: #e6e6e6;
+  color: #006c86;
   font-weight: 900;
 }
 
-body .footer {
-  background-color: #003D76;
+.footer {
+  background-color: #003d76;
   color: whitesmoke;
 }
 
-body .footer .container {
+.footer .container {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[4];
       grid-template-columns: repeat(4, 1fr);
 }
 
-body .footer .container .logo {
+.footer .container .logo {
   -ms-grid-column: 2;
   grid-column: 2;
   display: -webkit-box;
@@ -212,7 +228,7 @@ body .footer .container .logo {
           align-items: center;
 }
 
-body .footer .container .content-info {
+.footer .container .content-info {
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;
   grid-column: 1 / span 2;
@@ -229,17 +245,17 @@ body .footer .container .content-info {
   font-size: 20px;
 }
 
-body .footer .container .content-info h1 {
+.footer .container .content-info h1 {
   font-size: 25px;
 }
 
-body .footer .container .copyright {
+.footer .container .copyright {
   font-size: 20px;
-  border-right: #E6E6E6;
-  border-left: #E6E6E6;
+  border-right: #e6e6e6;
+  border-left: #e6e6e6;
 }
 
-body #myBtn {
+#myBtn {
   display: none;
   z-index: 99;
   border: none;
@@ -247,16 +263,16 @@ body #myBtn {
   position: fixed;
   bottom: 8px;
   right: 15px;
-  background-color: #006C86;
+  background-color: #006c86;
   color: white;
   width: auto;
   -webkit-transition: 5s;
   transition: 5s;
 }
 
-body #myBtn:hover {
-  background-color: #E6E6E6;
-  color: #006C86;
+#myBtn:hover {
+  background-color: #e6e6e6;
+  color: #006c86;
   font-weight: 900;
 }
 /*# sourceMappingURL=index.css.map */
