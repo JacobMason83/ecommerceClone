@@ -26,7 +26,7 @@ body {
       border-color: #003d76;
       color: white;
       &:hover {
-          color: #003d76;
+        color: #003d76;
       }
     }
   }
@@ -45,9 +45,7 @@ body {
     padding: 7px 7px 10px;
     border: 2px solid #fff;
     text-align: center;
-    //box-shadow: 1px 2px 4px rgb(0 0 0 / 50%);
-    
-}
+  }
   .count-div {
     display: flex;
     justify-content: flex-end;
@@ -63,7 +61,7 @@ body {
       background-color: #e6e6e6;
       outline: 2px solid black;
       height: 400px;
-
+      box-shadow: 1px 2px 4px rgb(0 0 0 / 50%);
       .card-top {
         display: flex;
         flex-direction: column;
@@ -124,7 +122,7 @@ body {
             }
           }
         }
-        #bottom {
+        .bottom-card {
           position: absolute;
           left: 50px;
           bottom: 30px;
@@ -132,26 +130,42 @@ body {
           flex-direction: column;
           justify-content: center;
           align-items: center;
+          .card-btn {
+            width: 150px;
+            height: 40px;
+            margin-top: 10px;
+            margin-left: 5px;
+            font-size: 18px;
+            background-color: $bs-green;
+            color: white;
+            &:hover {
+              background-color: #e6e6e6;
+              color: $bs-green;
+              font-weight: 900;
+            }
+            .cart {
+              color: white;
+              font-size: 20px;
+              margin-right: 15px;
+              &:hover {
+                color: #006c86;
+              }
+            }
+          }
           .remove-btn {
-            @include btn-guide();
+            width: 150px;
+            height: 40px;
+            margin-top: 10px;
+            margin-left: 5px;
+            font-size: 18px;
             background-color: #006c86;
             color: white;
-        }
-          .card-btn  {
-           @include btn-guide();
-           background-color: #006c86;
-           color: white;
-            .cart {
-                color: white;
-                font-size: 20px;
-                margin-right: 15px;
-                &:hover {
-                    color: #006c86;
-                }
+            &:hover {
+              background-color: #e6e6e6;
+              color: #006c86;
+              font-weight: 900;
             }
-           
           }
-
         }
       }
     }

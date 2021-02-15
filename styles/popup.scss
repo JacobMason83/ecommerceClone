@@ -1,15 +1,20 @@
 /* Popup container - can be anything you want */
+
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;} 
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}
+
 .popup {
-    position: relative;
     display: inline-block;
-    cursor: pointer;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-   
-    .popuptext {
-    display: none;
+    position: relative;   
+    cursor: pointer;    
+    .popuptext {   
      visibility: hidden;
      width: 160px;
      background-color: #555;
@@ -18,13 +23,12 @@
      border-radius: 6px;
      padding: 8px 0;
      position: absolute;
-     z-index: 1;
+     z-index: -1;
      bottom: 125%;
      left: 50%;
      margin-left: -80px;
-    
-     .popuptext::after {
-       content: "";
+     &::after {
+       content: "added to cart";
        position: absolute;
        top: 100%;
        left: 50%;
@@ -33,26 +37,18 @@
        border-style: solid;
        border-color: #555 transparent transparent transparent;
      }
+     .show {      
+        visibility: visible;
+        -webkit-animation: fadeIn 1s;
+        animation: fadeIn 1s;
+        z-index: 1;
+      }
    }
-   /* Toggle this class - hide and show the popup */
-    .show {
-       display: inline block;
-       visibility: visible;
-       -webkit-animation: fadeIn 1s;
-       animation: fadeIn 1s;
-     }
-     /* Add animation (fade in the popup) */
-     
-     @-webkit-keyframes fadeIn {
-       from {opacity: 0;} 
-       to {opacity: 1;}
-     }
-     
-     @keyframes fadeIn {
-       from {opacity: 0;}
-       to {opacity:1 ;}
-     }
-    }
+   
+  }
+  /* Toggle this class - hide and show the popup */
+    /* Add animation (fade in the popup) */
     
+   
   
   
